@@ -9,6 +9,14 @@
     justify-content: center;
 }
 
+.logo-mov {
+    display: none;
+}
+
+.hero-mobile {
+    display: none;
+}
+
 .hero-section h1 {
     padding: 25vh 0 14vh;
     max-width: 55vw;
@@ -273,7 +281,6 @@
 
 .about-us-info p {
     font-size: 1.2rem;
-    line-height: 24.38px;
 }
 
 .about-us-info h2 {
@@ -290,11 +297,23 @@
     margin: 0 2vw;
 }
 
+.about-us-logo {
+    display: none;
+}
+
+.team-mobile {
+    display: none;
+}
+
 /* Contact us section */
 .contact-us-section {
     margin:5vh 0;
     text-align: center;
     height: 60vh;
+}
+
+.contact-mobile {
+    display: none;
 }
 
 .contact-us-section h2 {
@@ -357,4 +376,173 @@
     position: absolute;
     left: 50vw;
     transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        height: 100vh;
+    }
+
+    .hero-section h1 {
+        color: #ffffff;
+        max-width: 75vw;
+        padding: 10vh 0;
+    }
+
+    .hero-section p {
+        color: #ffffff;
+        max-width: 70vw;
+        font-size: 12px;
+        text-align: center;
+        margin: 2px;
+    }
+
+    .logo-mov {
+        display: block;
+        width: 311px;
+    }
+
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        display: none;
+    }
+
+    .logo-icon {
+        display: none;
+    }
+
+    .hero-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download-buttons img {
+        width: 25px;
+    }
+
+    .download-buttons a {
+        background-color: #88D8C0;
+        font-size: 1.25rem;
+        width: 65vw;
+        padding: 15px;
+    }
+
+    .download-buttons a:first-of-type{
+        background-color: #AD45EC;
+    }
+
+    /* Waves */
+    .hero-section::before {
+        top: -4%;
+        left: 50vw;
+        transform: translateX(-50%) scale(0.5, 0.4);
+    }
+
+    /* Download Section */
+    .download-section {
+        display: none;
+    }
+
+    /* About us section*/
+    .about-us-section {
+        padding: 5vh 5vw;
+    }
+
+    .about-us-info {
+        width: 88vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-section h2 {
+        font-size: 2.75rem;
+        color: #ffffff;
+        margin-bottom: 7vh;
+    }
+
+    .about-us-section p {
+        font-size: 0.75rem;
+        color: #ffffff;
+    }
+
+    .about-us-section img {
+        margin: 2vh;
+    }
+
+    .about-us-icono {
+        display: none;
+    }
+
+    .about-us-logo {
+        display: block;
+    }
+
+    .echo-logo {
+        filter: invert(1);
+        height: 75px;
+    }
+
+    .team-mobile {
+        display: block;
+    }
+
+    .team-web {
+        display: none;
+    }
+
+    /* Contact us Section */
+    .contact-us-section {
+        margin-bottom: 12vh;
+    }
+    .contact-us-section h2 {
+        color: #ffffff;
+        font-size: 2.75rem;
+        margin-bottom: 12vh;
+    }
+
+    .contact-us-social {
+        display: none;
+    }
+
+    .contact-mobile {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .social-row {
+        margin-bottom: 5vh;
+    }
+
+    .social-row img {
+        filter: invert(1);
+        height: 40px;
+    }
+
+    .contact-mobile>img:nth-last-of-type(1){
+        filter: invert(1);
+    }
+}
+
+@media (max-width: 430px) {
+    /* Waves */
+    .hero-section::before {
+        top: -4%;
+        left: 50vw;
+        transform: translateX(-50%) scale(0.25, 0.27);
+    }
 }
