@@ -64,8 +64,7 @@
     content: "";
     position: absolute;
     top: -4%;
-    left: 50vw;
-    transform: translateX(-49%) scale(1.1, 0.6);
+    transform: scale(1.1, 0.6);
     height: 828px;
     width: 2436px;
     background: url('../images/hero.png') no-repeat center;
@@ -378,7 +377,77 @@
     transform: translateX(-50%);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1729px) {
+    /* Download Section */
+    /* Waves */
+    .download-section::before {
+        top: 93%;
+        transform: translateX(6%) scale(0.8, 0.5);
+    }
+}
+
+@media (max-width: 1550px) {
+    /* Hero Section */
+    .hero-buttons a {
+        padding: 10px 70px;
+    }
+
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    /* Download Section */
+    /* Waves */
+    .download-section::before {
+        top: 101%;
+        transform: translateX(-6%) scale(0.6, 0.5);
+    }
+
+    .download-left img {
+        height: 450px;
+    }
+
+    .download-buttons a {
+        font-size: 1rem;
+        padding: 0;
+        width: 270px;
+    }
+}
+
+@media (max-width: 1350px) {
+    /* General */
+    h1 {
+        font-size: 2.5rem;
+    }
+    /* Hero Section */
+    .hero-buttons a {
+        padding: 10px 40px;
+    }
+
+    /* Waves */
+    .hero-section::before {
+        top: -4%;
+        transform: scale(0.8, 0.5);
+    }
+
+    /* Download Section */
+    /* Waves */
+    .download-section::before {
+        top: 87%;
+        transform: translateX(-13%) scale(0.55, 0.4);
+    }
+
+    .download-buttons img {
+        height: 40px;
+    }
+
+    .download-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1100px) {
     /* Hero Section */
     .hero-section {
         height: 100vh;
@@ -386,8 +455,9 @@
 
     .hero-section h1 {
         color: #ffffff;
-        max-width: 75vw;
+        max-width: 80vw;
         padding: 10vh 0;
+        font-size: 2.5rem;
     }
 
     .hero-section p {
@@ -429,12 +499,13 @@
 
     .download-buttons img {
         width: 25px;
+        height: 25px;
     }
 
     .download-buttons a {
         background-color: #88D8C0;
         font-size: 1.25rem;
-        width: 65vw;
+        width: 40vw;
         padding: 15px;
     }
 
@@ -444,9 +515,8 @@
 
     /* Waves */
     .hero-section::before {
-        top: -4%;
-        left: 50vw;
-        transform: translateX(-50%) scale(0.5, 0.4);
+        top: -4%; 
+        transform:scale(0.7, 0.4);
     }
 
     /* Download Section */
@@ -538,11 +608,10 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 650px) {
     /* Waves */
     .hero-section::before {
         top: -4%;
-        left: 50vw;
-        transform: translateX(-50%) scale(0.25, 0.27);
+        transform: scale(0.3, 0.3);
     }
 }
