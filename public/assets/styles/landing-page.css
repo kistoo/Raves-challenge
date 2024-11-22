@@ -660,6 +660,7 @@
     /* Contact us Section */
     .contact-us-section {
         margin-bottom: 12vh;
+        height: 60vh;
     }
     .contact-us-section h2 {
         color: #ffffff;
