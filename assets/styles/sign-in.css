@@ -159,3 +159,36 @@ form input[type="text"] {
     color: #FFAF2B;
     text-decoration: none;
 }
+
+@media (max-width:1700px) {
+    .login-box {
+        padding: 30px;
+    }
+
+    .logo-container .logo {
+        width: 250px;
+    }
+
+    .separator {
+        margin: 0 20px;
+    }
+    
+    .social-icons {
+        gap: 40px;
+    }
+}
+
+@media (max-width:1500px) {
+    .login-box {
+        width: 55vw;
+    }
+    .logo-container {
+        padding: 70px 60px 100px 50px;
+    }
+}
+
+@media (max-width:1400px) {
+    .social-icons {
+        gap: 20px;
+    }
+}

@@ -9,6 +9,14 @@
     justify-content: center;
 }
 
+.logo-mov {
+    display: none;
+}
+
+.hero-mobile {
+    display: none;
+}
+
 .hero-section h1 {
     padding: 25vh 0 14vh;
     max-width: 55vw;
@@ -56,8 +64,7 @@
     content: "";
     position: absolute;
     top: -4%;
-    left: 50vw;
-    transform: translateX(-49%) scale(1.1, 0.6);
+    transform: scale(1.1, 0.6);
     height: 828px;
     width: 2436px;
     background: url('../images/hero.png') no-repeat center;
@@ -127,6 +134,9 @@
 /* Carousel section */
 .carousel-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-section h2 {
@@ -209,6 +219,10 @@
     background: linear-gradient(90deg, #4997D0, #88D8C0);
 }
 
+.carousel-item-5 {
+    background: linear-gradient(90deg, #88D8C0, #FFBF00);
+}
+
 .carousel-control {
     background: none;
     border: none;
@@ -252,6 +266,14 @@
     left: 350%;
 }
 
+.carousel-mobile {
+    display:none;
+}
+
+.mobile {
+    display: none;
+}
+
 /* About us section*/
 .about-us-section {
     display: flex;
@@ -273,7 +295,6 @@
 
 .about-us-info p {
     font-size: 1.2rem;
-    line-height: 24.38px;
 }
 
 .about-us-info h2 {
@@ -290,11 +311,23 @@
     margin: 0 2vw;
 }
 
+.about-us-logo {
+    display: none;
+}
+
+.team-mobile {
+    display: none;
+}
+
 /* Contact us section */
 .contact-us-section {
     margin:5vh 0;
     text-align: center;
     height: 60vh;
+}
+
+.contact-mobile {
+    display: none;
 }
 
 .contact-us-section h2 {
@@ -357,4 +390,335 @@
     position: absolute;
     left: 50vw;
     transform: translateX(-50%);
+}
+
+@media (min-width: 1729px) {
+    /* Download Section */
+    /* Waves */
+    .download-section::before {
+        top: 93%;
+        transform: translateX(6%) scale(0.8, 0.5);
+    }
+}
+
+@media (max-width: 1550px) {
+    /* Hero Section */
+    .hero-buttons a {
+        padding: 10px 70px;
+    }
+
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    /* Download Section */
+    /* Waves */
+    .download-section::before {
+        top: 92%;
+        transform: translateX(-8%) scale(0.6, 0.5);
+    }
+
+    .download-left img {
+        height: 450px;
+    }
+
+    .download-buttons a {
+        font-size: 1rem;
+        padding: 0;
+        width: 270px;
+    }
+
+    /* About us Section */
+    .about-us-section>img {
+        height: 550px;
+    }
+
+    /* Contact us Section */
+    .contact-us-section {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 1350px) {
+    /* General */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+
+    /* Hero Section */
+    .hero-buttons a {
+        padding: 10px 40px;
+    }
+
+    /* Waves */
+    .hero-section::before {
+        top: -4%;
+        transform: scale(0.8, 0.5);
+    }
+
+    /* Download Section */
+    .download-buttons a {
+        width: 270px;
+    }
+    
+    /* Waves */
+    .download-section::before {
+        top: 92%;
+        transform: translateX(-10%) scale(0.55, 0.4);
+    }
+
+    .download-buttons img {
+        height: 40px;
+    }
+
+    .download-section p {
+        font-size: 1rem;
+    }
+
+    /* About us Section */
+    .about-us-section>img {
+        height: 450px;
+    }
+    .about-us-section p {
+        font-size: 1rem;
+    }
+    .about-us-section h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* Hero Section */
+    .hero-section {
+        height: 100vh;
+    }
+
+    .hero-section h1 {
+        color: #ffffff;
+        max-width: 80vw;
+        padding: 10vh 0;
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        color: #ffffff;
+        max-width: 70vw;
+        font-size: 12px;
+        text-align: center;
+        margin: 2px;
+    }
+
+    .logo-mov {
+        display: block;
+        width: 311px;
+    }
+
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        display: none;
+    }
+
+    .logo-icon {
+        display: none;
+    }
+
+    .hero-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download-buttons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .download-buttons a {
+        background-color: #88D8C0;
+        font-size: 1.25rem;
+        width: 40vw;
+        padding: 15px;
+    }
+
+    .download-buttons a:first-of-type{
+        background-color: #AD45EC;
+    }
+
+    /* Waves */
+    .hero-section::before {
+        top: -4%; 
+        transform:scale(0.7, 0.4);
+    }
+
+    /* Download Section */
+    .download-section {
+        display: none;
+    }
+
+    /* Carousel */
+    .carousel {
+        margin-bottom: 5vh;
+    }
+
+    .carousel-section h2 {
+        color: #ffffff;
+        font-size: 2.75rem;
+        width: 80vw;
+    }
+
+    .carousel-web {
+        display: none;
+    }
+
+    .carousel-mobile {
+        display: flex;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .carousel-mobile>.carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-mobile>.carousel-item h3{
+        font-size: 2rem;
+    }
+    
+    .carousel-mobile>.carousel-item p{
+        font-size: 14px;
+        color: #FFFFFF;
+        width: 70vw;
+    }
+        
+    .carousel-mobile>.carousel-item img{
+        width: 400px;
+    }
+
+    .carousel-control.left {
+        left: 5px;
+    }
+    
+    .carousel-control.right {
+        right: 5px;
+    }
+
+    /* About us section*/
+    .about-us-section {
+        padding: 5vh 5vw;
+    }
+
+    .about-us-info {
+        width: 88vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-section h2 {
+        font-size: 2.75rem;
+        color: #ffffff;
+        margin-bottom: 7vh;
+    }
+
+    .about-us-section p {
+        font-size: 0.75rem;
+        color: #ffffff;
+    }
+
+    .about-us-section img {
+        margin: 2vh;
+    }
+
+    .about-us-icono {
+        display: none;
+    }
+
+    .about-us-logo {
+        display: block;
+    }
+
+    .echo-logo {
+        filter: invert(1);
+        height: 75px;
+    }
+
+    .team-mobile {
+        display: block;
+    }
+
+    .team-web {
+        display: none;
+    }
+
+    /* Contact us Section */
+    .contact-us-section {
+        margin-bottom: 12vh;
+        height: 60vh;
+    }
+    .contact-us-section h2 {
+        color: #ffffff;
+        font-size: 2.75rem;
+        margin-bottom: 12vh;
+    }
+
+    .contact-us-social {
+        display: none;
+    }
+
+    .contact-mobile {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .social-row {
+        margin-bottom: 5vh;
+    }
+
+    .social-row img {
+        filter: invert(1);
+        height: 40px;
+    }
+
+    .contact-mobile>img:nth-last-of-type(1){
+        filter: invert(1);
+    }
+}
+
+@media (max-width: 650px) {
+    /* Waves */
+    .hero-section::before {
+        top: -4%;
+        transform: scale(0.3, 0.3);
+    }
+
+    /* Carousel Section */
+    .carousel-mobile>.carousel-item img{
+        height: 150px;
+        width: 300px;
+    }
 }
