@@ -429,7 +429,12 @@
         width: 270px;
     }
 
-    /* Contact us section */
+    /* About us Section */
+    .about-us-section>img {
+        height: 550px;
+    }
+
+    /* Contact us Section */
     .contact-us-section {
         height: 70vh;
     }
@@ -473,6 +478,17 @@
 
     .download-section p {
         font-size: 1rem;
+    }
+
+    /* About us Section */
+    .about-us-section>img {
+        height: 450px;
+    }
+    .about-us-section p {
+        font-size: 1rem;
+    }
+    .about-us-section h2 {
+        font-size: 3rem;
     }
 }
 
