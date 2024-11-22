@@ -216,6 +216,10 @@
     background: linear-gradient(90deg, #4997D0, #88D8C0);
 }
 
+.carousel-item-5 {
+    background: linear-gradient(90deg, #88D8C0, #FFBF00);
+}
+
 .carousel-control {
     background: none;
     border: none;
@@ -257,6 +261,14 @@
 
 .carousel-item-4 .separator {
     left: 350%;
+}
+
+.carousel-mobile {
+    display:none;
+}
+
+.mobile {
+    display: none;
 }
 
 /* About us section*/
@@ -400,8 +412,8 @@
     /* Download Section */
     /* Waves */
     .download-section::before {
-        top: 101%;
-        transform: translateX(-6%) scale(0.6, 0.5);
+        top: 92%;
+        transform: translateX(-8%) scale(0.6, 0.5);
     }
 
     .download-left img {
@@ -420,6 +432,11 @@
     h1 {
         font-size: 2.5rem;
     }
+
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+
     /* Hero Section */
     .hero-buttons a {
         padding: 10px 40px;
@@ -432,10 +449,14 @@
     }
 
     /* Download Section */
+    .download-buttons a {
+        width: 270px;
+    }
+    
     /* Waves */
     .download-section::before {
-        top: 87%;
-        transform: translateX(-13%) scale(0.55, 0.4);
+        top: 92%;
+        transform: translateX(-10%) scale(0.55, 0.4);
     }
 
     .download-buttons img {
@@ -522,6 +543,51 @@
     /* Download Section */
     .download-section {
         display: none;
+    }
+
+    /* Carousel */
+    .carousel-web {
+        display: none;
+    }
+
+    .carousel-mobile {
+        display: flex;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .carousel-mobile>.carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-mobile>.carousel-item h3{
+        font-size: 2rem;
+    }
+    
+    .carousel-mobile>.carousel-item p{
+        font-size: 14px;
+        color: #FFFFFF;
+        width: 70vw;
+    }
+        
+    .carousel-mobile>.carousel-item img{
+        width: 400px;
+    }
+
+    .carousel-control.left {
+        left: 5px;
+    }
+    
+    .carousel-control.right {
+        right: 5px;
     }
 
     /* About us section*/
@@ -613,6 +679,12 @@
     .hero-section::before {
         top: -4%;
         transform: scale(0.3, 0.3);
+    }
+
+    /* Carousel Section */
+    .carousel-mobile>.carousel-item img{
+        height: 150px;
+        width: 300px;
     }
 }
 
