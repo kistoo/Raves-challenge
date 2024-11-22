@@ -134,6 +134,9 @@
 /* Carousel section */
 .carousel-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-section h2 {
@@ -425,6 +428,11 @@
         padding: 0;
         width: 270px;
     }
+
+    /* Contact us section */
+    .contact-us-section {
+        height: 70vh;
+    }
 }
 
 @media (max-width: 1350px) {
@@ -546,6 +554,16 @@
     }
 
     /* Carousel */
+    .carousel {
+        margin-bottom: 5vh;
+    }
+
+    .carousel-section h2 {
+        color: #ffffff;
+        font-size: 2.75rem;
+        width: 80vw;
+    }
+
     .carousel-web {
         display: none;
     }
@@ -685,23 +703,5 @@
     .carousel-mobile>.carousel-item img{
         height: 150px;
         width: 300px;
-    }
-}
-
-@media (max-height: 1000px) {
-    .contact-us-section {
-        height: 70vh;
-    }
-}
-
-@media (max-height: 800px) {
-    .contact-us-section {
-        height: 90vh;
-    }
-}
-
-@media (max-height: 600px) {
-    .contact-us-section {
-        height: 120vh;
     }
 }
