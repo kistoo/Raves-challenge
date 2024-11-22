@@ -159,3 +159,28 @@ a:hover, .register-box p:last-child a:hover {
     align-items: center;
 }
 
+@media (max-width:1500px) {
+    .social-icons {
+        gap: 40px;
+    }
+}
+
+@media (max-width:1400px) {
+    .social-icons {
+        gap: 20px;
+    }
+}
+
+@media (max-width:1300px) {
+    .logo-container {
+        padding: 70px 100px 100px 50px;
+    }
+
+    .logo-container .logo {
+        width: 250px;
+    }
+
+    .register-box {
+        width: 50vw;
+    }
+}
